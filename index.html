@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generate</title>
+</head>
+<body>
+    <h1>QR Code Image Generator</h1>
+
+    <!-- Campos para preencher -->
+    <form method="POST" id="image-form">
+        <!-- campos do formulário -->
+        <div class="input-container">
+            <label for="name" style="
+            margin-right: 65px;">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="input-container">
+            <label for="linkedin-url">Linkedin URL:</label>
+            <input type="text" id="linkedin-url" name="linkedin-url">
+        </div>
+        <div class="input-container">
+            <label for="github-url" style="
+            margin-right: 20px;">GitHub URL:</label>
+            <input type="text" id="github-url" name="github-url">
+        </div>
+        <!-- Botão para gerar imagem -->
+        <button type="submit" id="generate-btn">Generate Imagem</button>
+    </form>
+   
+  <!-- Texto abaixo do QR Code -->
+  <div id="name-container" class="center"></div>
+  <div id="scan-me">Scan Me</div>   
+
+    <!-- Div para exibir o QR Code e o nome -->
+    <div id="qrcode-container">
+        <a href="#" target="_blank">
+        <div id="qrcode" class="small"></div>
+        </a>
+    </div>
+  
+    <!-- Referências a bibliotecas externas -->
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        document.getElementById("image-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        });
+    </script>
+    
+</body>
+</html>
