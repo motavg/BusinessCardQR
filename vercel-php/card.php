@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 $data = json_decode(file_get_contents('data/data.txt'), true);
 
 $name = rawurldecode($_GET['name']);

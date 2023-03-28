@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 if (isset($_GET['name']) && isset($_GET['linkedin']) && isset($_GET['github'])) {
   $name = $_GET['name'];
   $linkedinUrl = $_GET['linkedin'];

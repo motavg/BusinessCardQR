@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 // Verifica se o arquivo "data.txt" existe e cria se não existir
 if (!file_exists('data/data.txt')) {
   $file = fopen('data/data.txt', 'w');
