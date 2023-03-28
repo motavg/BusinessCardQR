@@ -49,3 +49,5 @@ Você terá que mudar o arquivo main.js, caso queira utilizar localmente
 
   // Constrói a URL amigável para a página card.php usando o nome do usuário
   var card_url = "http://localhost/BusinessCardQR/" + encodeURIComponent(name);
+
+  E retirar o projeto php da pasta vercel-php e colocar na raiz do projeto.
