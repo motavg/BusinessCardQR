@@ -38,3 +38,14 @@ Notas adicionais
 Este projeto foi construído apenas para fins de demonstração e não foi testado em ambiente de produção. Ele pode conter vulnerabilidades de segurança e outros problemas que não foram abordados aqui. Por favor, use-o com cuidado e por sua própria conta e risco.
 
 PS: Este projeto foi desenvolvido usando o XAMPP, que é um pacote de software livre que contém o Apache, o MySQL e o PHP. Ele pode ser usado para criar um servidor web em seu computador local e, assim, executar este projeto. Portanto, antes de usar este projeto, você deve garantir que tenha instalado e configurado corretamente o XAMPP em seu sistema.
+
+
+PS_2: 
+
+Você terá que mudar o arquivo main.js, caso queira utilizar localmente
+
+ // Constrói a URL para a página api.php com os parâmetros desejados
+  var api_url = "http://localhost/BusinessCardQR/api.php?name=" + encodeURIComponent(name) + "&linkedin=" + encodeURIComponent(linkedinUrl) + "&github=" + encodeURIComponent(githubUrl);
+
+  // Constrói a URL amigável para a página card.php usando o nome do usuário
+  var card_url = "http://localhost/BusinessCardQR/" + encodeURIComponent(name);

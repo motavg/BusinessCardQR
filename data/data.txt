@@ -1,1 +1,1 @@
-{"name":"Vin\u00edcius Mota","linkedin_url":"","github_url":""}
+{"name":"Vin\u00edcius Mota","linkedin_url":"https:\/\/github.com\/motavg","github_url":"https:\/\/github.com\/motavg"}

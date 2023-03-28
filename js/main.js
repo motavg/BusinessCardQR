@@ -6,10 +6,10 @@ document.getElementById("generate-btn").addEventListener("click", function() {
   var githubUrl = document.getElementById("github-url").value;
 
   // Constrói a URL para a página api.php com os parâmetros desejados
-  var api_url = "http://localhost/BusinessCardQR/api.php?name=" + encodeURIComponent(name) + "&linkedin=" + encodeURIComponent(linkedinUrl) + "&github=" + encodeURIComponent(githubUrl);
+  var api_url = "https://business-card-qr.vercel.app/api.php?name=" + encodeURIComponent(name) + "&linkedin=" + encodeURIComponent(linkedinUrl) + "&github=" + encodeURIComponent(githubUrl);
 
   // Constrói a URL amigável para a página card.php usando o nome do usuário
-  var card_url = "http://localhost/BusinessCardQR/" + encodeURIComponent(name);
+  var card_url = "https://business-card-qr.vercel.app/" + encodeURIComponent(name);
 
   // Cria o objeto QRCode e define o conteúdo do código QR
   var qrcode = new QRCode("qrcode");
