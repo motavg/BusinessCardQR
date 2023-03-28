@@ -1,6 +1,8 @@
 {
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/card.php" }
+    { "src": "/card.php", "dest": "/card.php" },
+    { "src": "/api.php", "dest": "/api.php" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
+
