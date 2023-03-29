@@ -2,13 +2,20 @@
 // Permita que o arquivo seja acessado de qualquer origem
 header('Content-Type: text/html; charset=utf-8');
 
-$data_file_path = dirname(__FILE__) . '/data/data.txt';
-$data = json_decode(file_get_contents($data_file_path), true);
+// $data_file_path = dirname(__FILE__) . '/data/data.txt';
+// $data = json_decode(file_get_contents($data_file_path), true);
 
-$name = rawurldecode($_GET['name']);
+// Para usar no localhost
+// $name = rawurldecode($_GET['name']);
+// $linkedinUrl = isset($data['linkedin_url']) ? $data['linkedin_url'] : '';
+// $githubUrl = isset($data['github_url']) ? $data['github_url'] : '';
 
-$linkedinUrl = isset($data['linkedin_url']) ? $data['linkedin_url'] : '';
-$githubUrl = isset($data['github_url']) ? $data['github_url'] : '';
+// Usar no vercel
+$name = isset($_COOKIE['name']) ? $_COOKIE['name'] : '';
+$linkedinUrl = isset($_COOKIE['linkedin_url']) ? $_COOKIE['linkedin_url'] : '';
+$githubUrl = isset($_COOKIE['github_url']) ? $_COOKIE['github_url'] : '';
+
+
 ?>
 
 <!DOCTYPE html>
