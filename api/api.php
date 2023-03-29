@@ -1,5 +1,5 @@
 <?php
-phpinfo();
+// Permita que o arquivo seja acessado de qualquer origem
 header('Content-Type: text/html; charset=utf-8');
 
 if (isset($_GET['name']) && isset($_GET['linkedin']) && isset($_GET['github'])) {
