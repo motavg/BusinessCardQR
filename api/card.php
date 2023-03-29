@@ -13,7 +13,7 @@ $githubUrl = isset($data['github_url']) ? $data['github_url'] : '';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="/css/card.css">
   
   <title>Perfil de <?php echo $name; ?></title>
 </head>
