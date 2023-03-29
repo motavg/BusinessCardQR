@@ -1,1 +1,1 @@
-{"name":"","linkedin_url":"","github_url":""}
+{}
