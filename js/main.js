@@ -10,7 +10,7 @@ document.getElementById("generate-btn").addEventListener("click", function() {
 
 
   // Constrói a URL amigável para a página card.php usando o nome do usuário
-  var card_url = "/api/card.php?name=" + encodeURIComponent(name);
+  var card_url = "https://business-card-qr.vercel.app/api/card.php?name=" + encodeURIComponent(name);
 
 
   // Cria o objeto QRCode e define o conteúdo do código QR
