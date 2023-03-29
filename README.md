@@ -57,4 +57,7 @@ Você terá que mudar o arquivo main.js, caso queira utilizar localmente
   Pois como estou usando o vercel para hospedar, ele só aceita de forma estática. 
   
   O projeto está públicado: https://business-card-qr.vercel.app/
+
+ Lembrando que o qrcode está clicável, pois ele está salvando o armazenamento do cookie. Se você fizer pelo computador, ele vai gerar e vai mostrar o resultdo.
+ Mas caso você faça no computador e dê o scan pelo celular, não vai informações, para isso teria que está em um banco de dados. 
   
