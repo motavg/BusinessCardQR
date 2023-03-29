@@ -2,7 +2,8 @@
 // Permita que o arquivo seja acessado de qualquer origem
 header('Content-Type: text/html; charset=utf-8');
 
-$data = json_decode(file_get_contents('data/data.txt'), true);
+$data_file_path = dirname(__FILE__) . '/data/data.txt';
+$data = json_decode(file_get_contents($data_file_path), true);
 
 $name = rawurldecode($_GET['name']);
 
