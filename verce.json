@@ -5,7 +5,8 @@
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/vercel-php/card.php?name=$1" }
+    { "src": "/card/(.*)", "dest": "/api/card.php?name=$1" },
+    { "src": "/(.*)",  "dest": "/api/$1" }
   ]
 }
 
