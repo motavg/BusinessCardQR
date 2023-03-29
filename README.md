@@ -53,4 +53,8 @@ Você terá que mudar o arquivo main.js, caso queira utilizar localmente
   E retirar o projeto php da pasta vercel-php e colocar na raiz do projeto.
 
   Olhar os comentarios do arquivo api.php e card.php para funcionar no localhost da sua máquina.
+  
   Pois como estou usando o vercel para hospedar, ele só aceita de forma estática. 
+  
+  O projeto está públicado: https://business-card-qr.vercel.app/
+  
