@@ -1,5 +1,7 @@
 <?php
 phpinfo();
+header('Content-Type: text/html; charset=utf-8');
+
 if (isset($_GET['name']) && isset($_GET['linkedin']) && isset($_GET['github'])) {
   $name = $_GET['name'];
   $linkedinUrl = $_GET['linkedin'];

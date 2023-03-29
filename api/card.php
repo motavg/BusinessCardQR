@@ -1,5 +1,7 @@
 <?php
 phpinfo();
+header('Content-Type: text/html; charset=utf-8');
+
 $data = json_decode(file_get_contents('data/data.txt'), true);
 
 $name = rawurldecode($_GET['name']);
