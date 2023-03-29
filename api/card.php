@@ -15,7 +15,6 @@ $name = isset($_COOKIE['name']) ? $_COOKIE['name'] : '';
 $linkedinUrl = isset($_COOKIE['linkedin_url']) ? $_COOKIE['linkedin_url'] : '';
 $githubUrl = isset($_COOKIE['github_url']) ? $_COOKIE['github_url'] : '';
 
-
 ?>
 
 <!DOCTYPE html>
